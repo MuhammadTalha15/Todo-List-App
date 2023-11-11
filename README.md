@@ -1,2 +1,2 @@
 # Todo-List-App-Beta-
-This Beta Version does not Represent Final Quality. This is given by Publisher. All Rights Reserved ©
+This is a Beta Version and does not Represent Final Quality. This is given by Publisher. All Rights Reserved ©
