@@ -1,6 +1,6 @@
 # Beta Todo List App
 
-Welcome to the beta version of our Todo List App! This app is designed to help you keep track of your tasks and stay organized. Please note that this version is still in development, and there is one known limitation: **the app cannot store data at the moment**. However, rest assured that we are actively working on resolving this issue and improving the app.
+Welcome to the beta version of our Todo List App! This app is designed to help you keep track of your tasks and stay organized. Please note that this version is still in development, and there is one known limitation: **the app cannot store data at the moment**. However, rest assured that I am actively working on resolving this issue and improving the app.
 
 ## Features
 - Add tasks to your todo list
@@ -16,8 +16,15 @@ Welcome to the beta version of our Todo List App! This app is designed to help y
 - Add support for categorizing tasks
 - Introduce reminders and notifications
 
-We appreciate your patience and understanding as we work to enhance the functionality and reliability of our Todo List App. If you encounter any issues or have suggestions for improvement, please don't hesitate to reach out to us.
+I appreciate your patience and understanding as I work to enhance the functionality and reliability of my Todo List App. If you encounter any issues or have suggestions for improvement, please don't hesitate to reach out to me.
 
 Thank you for being a part of our beta testing community!
 
-*Note: This README will be updated as new features are added and issues are resolved.*
+## How to Contribute
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/muhammadtalha15/Todo-List-App-Beta-.git
+   
+2. Make your changes.
+3. Deploy Code.
