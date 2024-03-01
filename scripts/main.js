@@ -4,13 +4,19 @@ window.addEventListener('load', ()=> {
         const form_validator = document.getElementById('form-inpt-cnt');
         const main_input_field = document.getElementById('usr-inpt-cont-cnt');
         const tasks_parent = document.getElementById('data-cnt');
-        
-        form_validator.addEventListener('submit', (e)=>{
-            e.preventDefault();
 
-            const task = main_input_field.value;
+        const loadTasksFromLocalStorage = () => {
+            for (let i = 0; i < localStorage.length; i++) {
+                const key = localStorage.key(i);
+                const task = localStorage.getItem(key);
+                if (task) {
+                    createUserData(task);
+                }
+            }
+        }
+            
 
-            if (task.trim() !== '') { 
+            const createUserData = (taskContent) => { 
 
                 const user_created_div = document.createElement('div');
                     user_created_div.classList.add('usr-crtd-dta-cnt');
@@ -18,7 +24,7 @@ window.addEventListener('load', ()=> {
                 const task_input_holder = document.createElement('input');
                     task_input_holder.classList.add('todo-usr-data');
                     task_input_holder.setAttribute("readonly", "readonly");
-                    task_input_holder.value = task;
+                    task_input_holder.value = taskContent;
     
                 const data_content_editor = document.createElement('button');
                     data_content_editor.innerText = 'Edit';
@@ -37,7 +43,6 @@ window.addEventListener('load', ()=> {
                     user_created_div.appendChild(data_content_deleter);
 
                 data_content_editor.addEventListener('click', ()=>{
-
                     if (data_content_editor.innerText.toLowerCase() == 'edit') {
                         data_content_editor.innerText = 'Save';
                         task_input_holder.removeAttribute("readonly");
@@ -49,16 +54,40 @@ window.addEventListener('load', ()=> {
                         task_input_holder.setAttribute("readonly", "readonly");
                         task_input_holder.style.color = '#f0f0f0';
                     }
+
                 });
 
                 data_content_deleter.addEventListener('click', ()=>{
                     user_created_div.remove();
+                    updateLocalStorage();
                 });
 
 
                 main_input_field.value = '';
             }
 
-        });
+            
+            
+            const updateLocalStorage = () => {
+                const tasks = document.querySelectorAll('.todo-usr-data')
+                localStorage.clear();
+                tasks.forEach((task, index)=>{
+                    localStorage.setItem(index + 1, task.value);
+                })
+            }
+
+            loadTasksFromLocalStorage();
+
+        form_validator.addEventListener('submit', (e)=>{
+            e.preventDefault();
+
+            const task = main_input_field.value.trim();
+            if (task !== '') {
+                createUserData(task);
+                main_input_field.value = '';
+                updateLocalStorage();
+            }
+        })
+
 });
 
