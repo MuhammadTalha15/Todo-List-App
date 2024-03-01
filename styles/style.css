@@ -20,12 +20,33 @@ html {
     --placeholder-text-color: #a8a8a8;
     --gradient-one: #940B92;
     --gradient-two: #DA0C81;
+    --gradient-two-scroll-thumb: #aa0964;
     --edit-color: #cc16c9;
     --edit-color-hover: #8d108b;
     --delete-color: rgb(202, 20, 57);
     --delete-color-hover: rgb(155, 19, 46);
 
     --default-font: 'Poppins', sans-serif;
+}
+
+/* --------SCROLLBAR----------- */
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+
+::-webkit-scrollbar-track {
+    background: var(--dark);
+  }
+
+::-webkit-scrollbar-thumb {
+    border-radius: 3px;
+    background-color: var(--gradient-two);
+    transition: 0.4s;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background-color: var(--gradient-two-scroll-thumb);
 }
 
 .mn {
@@ -106,7 +127,7 @@ html {
 
 .usr-crtd-dta-cnt{
     position: relative;
-    height: 6rem;
+    min-height: 6rem;
     width: 80rem;
     background-color: var(--usr-data-dark);
     margin: 1rem 5rem;
