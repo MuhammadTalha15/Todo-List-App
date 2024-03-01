@@ -1,17 +1,13 @@
-# Beta Todo List App
+# Todo List App
 
-Welcome to the beta version of our Todo List App! This app is designed to help you keep track of your tasks and stay organized. Please note that this version is still in development, and there is one known limitation: **the app cannot store data at the moment**. However, rest assured that I am actively working on resolving this issue and improving the app.
+Welcome to the beta version of our Todo List App! This app is designed to help you keep track of your tasks and stay organized. Please note that this version is still in development. However, rest assured that I am actively working and improving the app.
 
 ## Features
 - Add tasks to your todo list
-- Mark tasks as completed
 - Delete tasks from the list
 
-## Known Issues
-- Data storage not implemented yet
-
 ## Future Updates
-- Implement data storage functionality
+- Mark tasks as completed
 - Improve user interface and experience
 - Add support for categorizing tasks
 - Introduce reminders and notifications
