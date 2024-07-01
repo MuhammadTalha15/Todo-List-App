@@ -16,6 +16,10 @@ I appreciate your patience and understanding as I work to enhance the functional
 
 Thank you for being a part of our beta testing community!
 
+## Demo
+
+Check out the live demo [here](http://muhammadtalha15.github.io/Todo-List-App/).
+
 ## How to Contribute
 1. Clone the repository:
 
