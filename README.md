@@ -24,7 +24,7 @@ Check out the live demo [here](http://muhammadtalha15.github.io/Todo-List-App/).
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/muhammadtalha15/Todo-List-App-Beta-.git
+   git clone https://github.com/muhammadtalha15/Todo-List-App.git
    
 2. Make your changes.
 3. Deploy Code.
